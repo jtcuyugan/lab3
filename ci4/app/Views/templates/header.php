@@ -1,6 +1,4 @@
-<!doctype html>
-<html>
-<head>
+<!DOCTYPE html>
     <title>CodeIgniter Tutorial</title>
 </head>
 <body>
