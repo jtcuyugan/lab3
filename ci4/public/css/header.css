@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'joane_stencilregular';
        src: url('../fonts/joane_stencil_regular-webfont.woff2') format('woff2'),
-         url('../fonts/joane_stencil_regular-webfont.woff') format('woff');
+         url('fonts/joane_stencil_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -107,6 +107,7 @@ div#contents{
 }
 
 p#lobbytitle{
+    font-family: "joane_stencilregular";
     line-height: 2px;
     background-color: black, opacity(0.5);
     text-align: left;
