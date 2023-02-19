@@ -32,7 +32,7 @@
 <div id="contents">
 		<br><br><br>
 
-		<p style="font-size: 50px; font-family: joane_stencilregular; color: white;" id="lobbytitle">Welcome to Jam's Space</p>
+		<p style="font-size: 50px; font-family: joane_stencilregular; color: white;" id="lobbytitle"></p>
 		<p style="font-size: 25px; font-family: TimesNewRoman; color: white;" id="lobbytext">Galaxy 020816</p>
 		<br>
 		<p style="font-size: 25px; font-family: joane_stencilregular; color: white;" id="lobbytext">About:</p>
