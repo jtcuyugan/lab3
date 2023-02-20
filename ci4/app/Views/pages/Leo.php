@@ -25,7 +25,7 @@
 <br><br><br><br><br>
 <center>
 <div class="container">
-		<img src="images/leo.png" alt="The Leo Constellation" height="525px">
+		<img src="images/leo.png" alt="The Leo Constellation" height="70%">
 		<div class="overlay" style="font-size: 30px; font-family: joane_stencilregular;">
 			<div class="text">She is masterful, she likes authority, she aspires toward an ideal. She likes to give advice. She is honest, frank, loyal, open, and sincere.</div>
 		  </div>
