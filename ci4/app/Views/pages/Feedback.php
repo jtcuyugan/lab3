@@ -80,7 +80,7 @@
 			<p style="font-size: 50px; font-family: joane_stencilregular; color: white;" id="lobbytext">Register a Star!</p>
 			<p style="font-size: 20px; font-family: TimesNewRoman; color: white;"><span class="error">* This field is required</span></p>
 
-			<p style="font-size: 20; font-family: joane_stencilregular;" id="explore"><a href="Guests.php" id="explore">Explore the Created Galaxy</a></p>
+			<p style="font-size: 20; font-family: joane_stencilregular;" id="explore"><a href="Guests" id="explore">Explore the Created Galaxy</a></p>
 
 			<form method="post" action="../sql/SQLFeed.php">  
 			
