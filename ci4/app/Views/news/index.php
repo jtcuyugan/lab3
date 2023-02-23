@@ -1,3 +1,6 @@
+<?php echo link_tag('css/header.css'); 
+	echo script_tag('jscript/index.js'); ?>
+
 <h2><?= esc($title) ?></h2>
 
 <?php if (! empty($news) && is_array($news)): ?>

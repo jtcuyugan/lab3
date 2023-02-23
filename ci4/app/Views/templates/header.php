@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <head>
-    <?php echo link_tag('css/header.css'); 
-	echo script_tag('jscript/index.js'); ?>
 </head>
 <body>
     <div id="navbar" id="top">
