@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+    <?php echo link_tag('css/header.css'); ?>
 </head>
 <body>
     <div id="navbar" id="top">
