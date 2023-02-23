@@ -1,5 +1,2 @@
-<?php echo link_tag('css/header.css'); 
-	echo script_tag('jscript/index.js'); ?>
-
 <h2><?= esc($news['title']) ?></h2>
 <p><?= esc($news['body']) ?></p>
