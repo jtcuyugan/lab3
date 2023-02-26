@@ -76,7 +76,7 @@
 		return $data;
 		}
 			?>
-
+			<center>
 			<p style="font-size: 50px; font-family: joane_stencilregular; color: white;" id="lobbytext">Register a Star!</p>
 			<p style="font-size: 20px; font-family: TimesNewRoman; color: white;"><span class="error">* This field is required</span></p>
 
@@ -103,7 +103,7 @@
 			<br><br>
 			<input type="submit" name="submit" value="Submit">  
 			</form>
-		
+			</center>
 			<?php
 			if ($_SERVER["REQUEST_METHOD"] == "POST") 
 			{
