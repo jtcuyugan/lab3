@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<title> [ GALAXY ] </title>
-	<link rel="stylesheet" type="text/css" href = "../css/feedback.css">
-	<link rel="icon" type="image/x-icon" href="../images/wootteofeedback.ico">
+	<link rel="stylesheet" type="text/css" href = "css/feedback.css">
+	<link rel="icon" type="image/x-icon" href="images/wootteofeedback.ico">
 </head>
 <body>
 <div id="navbar" id="top">
