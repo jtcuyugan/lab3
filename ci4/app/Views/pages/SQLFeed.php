@@ -8,7 +8,7 @@
 			$username = "webprogmi212";
 			$password = "b3ntRhino98";
 			$dbname = "webprogmi212";
-		
+		}
 			// Create connection
 			$con = new mysqli($servername, $username, $password, $dbname);
 			// Check connection
@@ -36,7 +36,7 @@
 		}
 		// Close connection
 		mysqli_close($con);
-		}
+		
 			?>
 	</body>
 </html>
