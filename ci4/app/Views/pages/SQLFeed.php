@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<head>
+<META http-equiv="refresh" content="5"; URL="Feedback"> 
+</head>
 <html>
 	<body>
 	<?php
