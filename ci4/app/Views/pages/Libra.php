@@ -8,20 +8,6 @@
 	<link rel="icon" type="image/x-icon" href="../images/libra.ico">
 </head>
 <body>
-<div id="navbar" id="top">
-	<div id="pageselector">
-		<center>
-			<ul>
-				<li id="buttons"><a href="index" id="buttons">HOME</a></li>
-				<li id="buttons"><a href="Leo" id="buttons">SUN</a></li>
-				<li id="buttons"><a href="Gallery" id="logo"><img src="images/wootteogallery.png" id="logo" padding="none"></img></a></li>
-				<li id="buttons"><a href="Sagi" id="buttons">MOON</a></li>
-				<li id="buttons"><a href="Libra" id="logo"><img src="images/libra.png" id="logo" padding="none"></img></a></li>
-			</ul>
-		</center>
-		<hr id="header">
-	</div>
-</div>
 
 <br><br><br><br><br>
 <center>
