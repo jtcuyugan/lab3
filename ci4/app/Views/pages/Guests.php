@@ -26,7 +26,7 @@
 <br><br><br><br><br><br><br>
 
 <?php
-include("SQLTable.php");
+include("SQLTable");
 $query = "SELECT name, email, website, comment, gender FROM Stars";
 $result = $conn->query($query);
 ?>
