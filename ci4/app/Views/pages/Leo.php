@@ -31,9 +31,9 @@
 		  </div>
 </div>
 </center>
+<center>
 <div id="contents">
 	<br>
-		<center>
 		<p style="font-size: 55px; font-family: joane_stencilregular; color: white;" id="lobbytext">The Lion</p>
 		<br>
 		<p style="font-size: 30px; font-family: joane_stencilregular; color: white;" id="lobbytext">Name</p>
@@ -47,6 +47,6 @@
 		<br>
 		<p style="font-size: 30px; font-family: joane_stencilregular; color: white;" id="lobbytext">Discovery Date</p>
 		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;" id="lobbytext">REDACTED</p>
-		</center>	
 	<br>
 </div>
+</center>	
