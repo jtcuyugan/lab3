@@ -101,19 +101,19 @@
 				$con = new mysqli($servername, $username, $password, $dbname);
 				// Check connection
 				if ($con->connect_error) {
-				die("Connection failed: " . $con->connect_error);
+					die("Connection failed: " . $con->connect_error);
 				}
 			
-			if(array_key_exists('submit', $_POST)){
-				echo "<br><p style='font-size: 20px; font-family: joane_stencilregular; color: white;' id='restext'>Star Successfully Created!</p><br>";
-        		exit;
-			} else{
-				mysqli_error($con);
-			}
+				if(array_key_exists('submit', $_POST)){
+					echo "<br><p style='font-size: 20px; font-family: joane_stencilregular; color: white;' id='restext'>Star Successfully Created!</p><br>";
+					exit;
+				} else{
+					mysqli_error($con);
+				}
 
-			// Close connection
-			mysqli_close($con);
-			}
+				// Close connection
+				mysqli_close($con);
+				}
 			?>
 			<br><br><br>
 		</center>

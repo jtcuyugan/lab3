@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-<head>
-<META http-equiv="refresh" content="5"; URL="Feedback"> 
-</head>
 <html>
 	<body>
 	<?php
@@ -11,14 +8,13 @@
 			$username = "webprogmi212";
 			$password = "b3ntRhino98";
 			$dbname = "webprogmi212";
-		}
+		
 			// Create connection
 			$con = new mysqli($servername, $username, $password, $dbname);
 			// Check connection
-		if($con === false){
-			die("ERROR: Could not connect. "
-				. mysqli_connect_error());
-		}
+			if($con === false){
+				die("ERROR: Could not connect. " . mysqli_connect_error());
+			}
 
 		// get the post records
 		$name = $_REQUEST['name'];
@@ -39,7 +35,7 @@
 		}
 		// Close connection
 		mysqli_close($con);
-		
+	}
 			?>
 	</body>
 </html>
