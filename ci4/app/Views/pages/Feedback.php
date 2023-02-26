@@ -104,33 +104,6 @@
 			<input type="submit" name="submit" value="Submit">  
 			</form>
 		
-			<?php
-			if ($_SERVER["REQUEST_METHOD"] == "POST") 
-			{
-			
-				$servername = "192.168.150.213";
-				$username = "webprogmi212";
-				$password = "b3ntRhino98";
-				$dbname = "webprogmi212";
-				
-				// Create connection
-				$con = new mysqli($servername, $username, $password, $dbname);
-				// Check connection
-				if ($con->connect_error) {
-				die("Connection failed: " . $con->connect_error);
-				}
-			
-			if(array_key_exists('submit', $_POST)){
-				echo "<br><p style='font-size: 20px; font-family: joane_stencilregular; color: white;' id='restext'>Star Successfully Created!</p><br>";
-        		exit;
-			} else{
-				mysqli_error($con);
-			}
-
-			// Close connection
-			mysqli_close($con);
-			}
-			?>
 		<?php
 			if ($_SERVER["REQUEST_METHOD"] == "POST") 
 			{
@@ -142,30 +115,22 @@
 				// Create connection
 				$con = new mysqli($servername, $username, $password, $dbname);
 				// Check connection
-			if($con === false){
-				die("ERROR: Could not connect. "
-					. mysqli_connect_error());
-			}
-
-			// get the post records
-			$name = $_REQUEST['name'];
-			$email = $_REQUEST['email'];
-			$website = $_REQUEST['website'];
-			$comment = $_REQUEST['comment'];
-			$gender = $_REQUEST['gender'];
+				if ($con->connect_error) {
+					die("Connection failed: " . $con->connect_error);
+					}
 
 			// database insert SQL code
 			$sql = "INSERT INTO jcuyugan_Stars VALUES (NULL, '$name', '$email', '$website', '$comment', '$gender', current_timestamp())";
 			
-			if(mysqli_query($con, $sql)){
+			if ($con->query($sql) === TRUE) {
 				echo "<br><p style='font-size: 20px; font-family: joane_stencilregular; color: white;' id='restext'>Star Successfully Created!</p><br>";
         		exit;
 			} else{
-				echo "Failed to register star";
+				echo "<br><p style='font-size: 20px; font-family: joane_stencilregular; color: white;' id='restext'>Failed to Register Star (Try Again!)</p><br>";
 				mysqli_error($con);
 			}
 			// Close connection
-			mysqli_close($con);
+			$con->close();
 		}
 			?>
 			<br><br><br>
