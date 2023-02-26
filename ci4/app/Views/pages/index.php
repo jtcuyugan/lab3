@@ -3,8 +3,8 @@
 <head>
 	<title>[ SPACE JAM ]</title>
 	<link rel="shortcut icon" href="/images/wootteohome.ico" type="image/x-icon">
-	<?php echo link_tag('css/index.css'); 
-	echo script_tag('jscript/index.js'); ?>
+	<?php echo link_tag('../css/index.css'); 
+	echo script_tag('../jscript/index.js'); ?>
 </head>
 <body onload="typeWriter()">
 
