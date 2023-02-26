@@ -62,7 +62,7 @@ $result = $conn->query($query);
     <?php
     }?>
   </table>
-  <p style="font-size: 20px; font-family: joane_stencilregular; color: white;" id="explore"><a href="Feedback.php" id="explore">Return to Register!</a></p>
+  <p style="font-size: 20px; font-family: joane_stencilregular; color: white;" id="explore"><a href="Feedback" id="explore">Return to Register!</a></p>
 </center>
 </body>
 </html>
