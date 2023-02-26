@@ -12,7 +12,7 @@
 <br><br><br><br><br><br><br>
 
 <?php
-include("SQLTable");
+include("SQLTable.php");
 $query = "SELECT name, email, website, comment, gender FROM Stars";
 $result = $conn->query($query);
 ?>
