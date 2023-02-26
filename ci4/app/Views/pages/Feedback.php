@@ -96,9 +96,9 @@
 			<p style="font-size: 20px; font-family: TimesNewRoman; color: white;" id="restext">Star's Message: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea></p>
 			<br>
 			<p style="font-size: 20px; font-family: TimesNewRoman; color: white;" id="restext">Star's Identity:
-			<input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
-			<input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
-			<input type="radio" name="gender" <?php if (isset($gender) && $gender=="other") echo "checked";?> value="other">Other  
+			<input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="Female">Female
+			<input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="Male">Male
+			<input type="radio" name="gender" <?php if (isset($gender) && $gender=="other") echo "checked";?> value="Other">Other  
 			<span class="error">* <?php echo $genderErr;?></span></p>
 			<br><br>
 			<input type="submit" name="submit" value="Submit">  
@@ -120,7 +120,7 @@
 					}
 
 			// database insert SQL code
-			$sql = "INSERT INTO jcuyugan_Stars VALUES (NULL, '$name', '$email', '$website', '$comment', '$gender', current_timestamp())";
+			$sql = "INSERT INTO jcuyugan_Stars (name, email, website, comment, gender, reg_date) VALUES (NULL, '$name', '$email', '$website', '$comment', '$gender', current_timestamp())";
 			
 			if ($con->query($sql) === TRUE) {
 				echo "<br><p style='font-size: 20px; font-family: joane_stencilregular; color: white;' id='restext'>Star Successfully Created!</p><br>";
