@@ -11,7 +11,7 @@
 	<div id="pageselector">
 		<center>
 			<ul>
-				<li id="buttons"><a href="../index" id="buttons">HOME</a></li>
+				<li id="buttons"><a href="index" id="buttons">HOME</a></li>
 				<li id="buttons"><a href="Leo" id="buttons">SUN</a></li>
 				<li id="buttons"><a href="Gallery" id="logo"><img src="images/wootteogallery.png" id="logo" padding="none"></img></a></li>
 				<li id="buttons"><a href="Sagi" id="buttons">MOON</a></li>
@@ -82,7 +82,7 @@
 
 			<p style="font-size: 20; font-family: joane_stencilregular;" id="explore"><a href="Guests" id="explore">Explore the Created Galaxy</a></p>
 
-			<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+			<form method="post" action="SQLFeed">  
 			
 			<p style="font-size: 20px; font-family: TimesNewRoman; color: white;" id="restext">Star's Name: <input type="text" name="name" value="<?php echo $name;?>">
 			<span class="error" style="font-size: 20px; font-family: TimesNewRoman; color: white;">* <?php echo $nameErr;?></span></p>
@@ -104,34 +104,32 @@
 			<input type="submit" name="submit" value="Submit">  
 			</form>
 		
-		<?php
+			<?php
 			if ($_SERVER["REQUEST_METHOD"] == "POST") 
 			{
+			
 				$servername = "192.168.150.213";
 				$username = "webprogmi212";
 				$password = "b3ntRhino98";
 				$dbname = "webprogmi212";
-			
+				
 				// Create connection
 				$con = new mysqli($servername, $username, $password, $dbname);
 				// Check connection
 				if ($con->connect_error) {
-					die("Connection failed: " . $con->connect_error);
-					}
-
-			// database insert SQL code
-			$sql = "INSERT INTO jcuyugan_Stars (name, email, website, comment, gender, reg_date) VALUES (NULL, '$name', '$email', '$website', '$comment', '$gender', current_timestamp())";
+				die("Connection failed: " . $con->connect_error);
+				}
 			
-			if ($con->query($sql) === TRUE) {
+			if(array_key_exists('submit', $_POST)){
 				echo "<br><p style='font-size: 20px; font-family: joane_stencilregular; color: white;' id='restext'>Star Successfully Created!</p><br>";
         		exit;
 			} else{
-				echo "<br><p style='font-size: 20px; font-family: joane_stencilregular; color: white;' id='restext'>Failed to Register Star (Try Again!)</p><br>";
 				mysqli_error($con);
 			}
+
 			// Close connection
-			$con->close();
-		}
+			mysqli_close($con);
+			}
 			?>
 			<br><br><br>
 		</center>
