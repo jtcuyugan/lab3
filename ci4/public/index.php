@@ -1,86 +1,67 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>[ SPACE JAM ]</title>
-	<link rel="shortcut icon" href="/images/wootteohome.ico" type="image/x-icon">
-	<?php echo link_tag('css/index.css'); 
-	echo script_tag('jscript/index.js'); ?>
-</head>
-<body onload="typeWriter()">
+<?php
 
-<div id="navbar" id="top">
-        <div id="pageselector">
-            <center>
-                <ul>
-                    <li id="buttons"><a href="index.php" id="buttons">HOME</a></li>
-                    <li id="buttons"><a href="html/Leo.php" id="buttons">SUN</a></li>
-                    <li id="buttons"><a href="html/Gallery.php" id="logo"><img src="images/wootteogallery.png" id="logo" padding="none"></a></li>
-                    <li id="buttons"><a href="html/Sagi.php" id="buttons">MOON</a></li>
-                    <li id="buttons"><a href="html/Libra.php" id="buttons">RISING</a></li>
-                </ul>
-            </center>
-            <hr id="header">
-        </div>
-    </div>
+// Check PHP version.
+$minPhpVersion = '7.4'; // If you update this, don't forget to update `spark`.
+if (version_compare(PHP_VERSION, $minPhpVersion, '<')) {
+    $message = sprintf(
+        'Your PHP version must be %s or higher to run CodeIgniter. Current version: %s',
+        $minPhpVersion,
+        PHP_VERSION
+    );
 
-<video autoplay muted loop id="myVideo">
-	<source src="videos/astronaut.mp4" type="video/mp4">
-</video>
+    exit($message);
+}
 
-<br><br><br><br><br><br><br><br>
+// Path to the front controller (this file)
+define('FCPATH', __DIR__ . DIRECTORY_SEPARATOR);
 
-<div id="contents">
-		<br><br><br>
+// Ensure the current directory is pointing to the front controller's directory
+chdir(FCPATH);
 
-		<p style="font-size: 50px; font-family: joane_stencilregular; color: white;" id="lobbytitle"></p>
-		<p style="font-size: 25px; font-family: TimesNewRoman; color: white;" id="lobbytext">Galaxy 020816</p>
-		<br>
-		<p style="font-size: 25px; font-family: joane_stencilregular; color: white;" id="lobbytext">About:</p>
-		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;" id="lobbydesc">Either called Jam or Jamzy, this galaxy is known</p>
-		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;" id="lobbydesc">for the various celestial bodies swimming along </p>
-		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;" id="lobbydesc">her space. This galaxy is continuously expanding </p>
-		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;" id="lobbydesc">and its entirety is still being explored.</p>
-		
-<div id="wpageselector">
-	<center>
-		<ul>
-		<li id="wbuttons">
-			<div id="gallery">
-			<a target="_blank" href="https://open.spotify.com/playlist/4ou2HDr1vBRJcA5VHl2eRX?si=9fef52eef14d4b25">
-			  <img src="images/wootteospotify.png" alt="Spotify Wootteo">
-			</a>
-			<div id="desc" style="font-size: 20px; font-family: TimesNewRoman; color: #76DBBF;">Music of Galaxy 020816</div>
-		</div>
-		</li>
-		
-		<li id="wbuttons">
-			<div id="gallery">
-			<a target="_blank" href="https://youtu.be/c6ASQOwKkhk">
-			  <img src="images/wootteovisualizer.png" alt="YouTube Wootteo">
-			</a>
-			<div id="desc" style="font-size: 20px; font-family: TimesNewRoman; color: #9D1AFB;">Visualizer of Galaxy 020816</div>
-		  	</div>
-		</li>
+/*
+ *---------------------------------------------------------------
+ * BOOTSTRAP THE APPLICATION
+ *---------------------------------------------------------------
+ * This process sets up the path constants, loads and registers
+ * our autoloader, along with Composer's, loads our constants
+ * and fires up an environment-specific bootstrapping.
+ */
 
-		<li id="wbuttons">
-			<div id="gallery">
-			<a href="html/Resources.php">
-			  <img src="images/wootteosing.png" alt="Resources Wootteo">
-			</a>
-			<div id="desc" style="font-size: 20px; font-family: TimesNewRoman; color: #76DBBF;">Spacecraft of Galaxy 020816</div>
-		  	</div>
-		</li>
+// Load our paths config file
+// This is the line that might need to be changed, depending on your folder structure.
+require FCPATH . '../app/Config/Paths.php';
+// ^^^ Change this line if you move your application folder
 
-		<li id="wbuttons">
-			<div id="gallery">
-			<a href="html/Feedback.php">
-			  <img src="images/wootteofeedback.png" alt="Feedback Wootteo">
-			</a>
-			<div id="desc" style="font-size: 20px; font-family: TimesNewRoman; color: #9D1AFB;">Stars of Galaxy 020816</div>
-		  	</div>
-		</li>
-		</ul>
-	</center>
-	</div>
-	<br>
-</div>
+$paths = new Config\Paths();
+
+// Location of the framework bootstrap file.
+require rtrim($paths->systemDirectory, '\\/ ') . DIRECTORY_SEPARATOR . 'bootstrap.php';
+
+// Load environment settings from .env files into $_SERVER and $_ENV
+require_once SYSTEMPATH . 'Config/DotEnv.php';
+(new CodeIgniter\Config\DotEnv(ROOTPATH))->load();
+
+/*
+ * ---------------------------------------------------------------
+ * GRAB OUR CODEIGNITER INSTANCE
+ * ---------------------------------------------------------------
+ *
+ * The CodeIgniter class contains the core functionality to make
+ * the application run, and does all of the dirty work to get
+ * the pieces all working together.
+ */
+
+$app = Config\Services::codeigniter();
+$app->initialize();
+$context = is_cli() ? 'php-cli' : 'web';
+$app->setContext($context);
+
+/*
+ *---------------------------------------------------------------
+ * LAUNCH THE APPLICATION
+ *---------------------------------------------------------------
+ * Now that everything is setup, it's time to actually fire
+ * up the engines and make this app do its thang.
+ */
+
+$app->run();

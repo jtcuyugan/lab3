@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<title> Gallery </title>
-	<?php echo link_tag('../css/gallery.css'); ?>
-	<?php echo script_tag('../jscript/gallery.js'); ?>
+	<?php echo link_tag('css/gallery.css'); ?>
+	<?php echo script_tag('jscript/gallery.js'); ?>
 	<link rel="icon" type="image/x-icon" href="../images/wooteogallery.ico">
 </head>
 <body>
