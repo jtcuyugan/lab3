@@ -158,7 +158,7 @@
 			$sql = "INSERT INTO jcuyugan_Stars VALUES (NULL, '$name', '$email', '$website', '$comment', '$gender', current_timestamp())";
 			
 			if(mysqli_query($con, $sql)){
-				echo "<script> location.href='Feedback'; </script>";
+				echo "<br><p style='font-size: 20px; font-family: joane_stencilregular; color: white;' id='restext'>Star Successfully Created!</p><br>";
         		exit;
 			} else{
 				echo "Failed to register star";
