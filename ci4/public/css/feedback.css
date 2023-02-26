@@ -98,6 +98,7 @@ div#contents{
 }
 
 p#lobbytext{
+    text-align: center;
     line-height: 0px;
     background-color: black, opacity(0.5);
     vertical-align: bottom;
