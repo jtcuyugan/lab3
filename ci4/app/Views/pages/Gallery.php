@@ -71,6 +71,5 @@
 	</center>
 	
 	<br>
-	<script src="../jscript/gallery.js"></script>
 </body>
 </html>
