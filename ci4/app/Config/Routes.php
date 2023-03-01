@@ -33,8 +33,12 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
+use App\Controllers\Guest;
 use App\Controllers\News;
 use App\Controllers\Pages;
+
+$routes->match(['get', 'post'], 'Feedback', [Guest::class, 'create']);
+$routes->get('guest', [Guest::class, 'index']);
 
 $routes->match(['get', 'post'], 'news/create', [News::class, 'create']);
 $routes->get('news/(:segment)', [News::class, 'view']);
