@@ -33,7 +33,6 @@ class Guest extends BaseController
         $post = $this->request->getPost(['id','name','email','website','comment','gender','reg_date']);
         
         if (! $this->validateData($post, [
-            'id' => 'NULL',
             'name' => 'required|max_length[255]|min_length[3]',
             'email' => 'required|max_length[255]|min_length[3]',
             'website' => 'required|max_length[255]|min_length[3]',

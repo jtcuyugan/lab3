@@ -86,7 +86,7 @@
 			<input type="radio" name="gender" <?php if (isset($gender) && $gender=="other") echo "checked";?> value="Other">Other  
 			<span class="error">* <?php echo $genderErr;?></span></p>
 			<br><br>
-			<input type="submit" name="submit" value="Create guest entry">  
+			<input type="submit" name="submit" value="Create My Star!">  
 			</form>
 			<br><br><br>
 		</center>
