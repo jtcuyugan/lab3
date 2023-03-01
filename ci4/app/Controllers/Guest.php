@@ -40,7 +40,7 @@ class Guest extends BaseController
             'gender' => 'required|max_length[255]|min_length[3]'
         ])) {
             return view('templates/header').
-            view('pages/Feedback').
+            view('pages/SQLFeed').
             view('templates/footer');
         }
 
