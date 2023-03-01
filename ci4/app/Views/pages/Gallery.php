@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<title> Gallery </title>
-	<?php echo link_tag('css/gallery.css'); ?>
-	<?php echo script_tag('jscript/gallery.js'); ?>
+	<link rel="stylesheet" href="css/gallery.css">
+	<script src="jscript/gallery.js"></script>
 	<link rel="icon" type="image/x-icon" href="../images/wooteogallery.ico">
 </head>
 <body>
@@ -19,7 +19,7 @@
 	<div class="slide">
 		<div class="slideshow-container">
 			<div class="mySlides fade">
-			  <img class="image" src="gal1.png" style="width:50%">
+			  <img class="image" src="images/gal1.png" style="width:50%">
 			</div>
 			
 			<div class="mySlides fade">
@@ -69,7 +69,8 @@
 			</div>
 		</div>
 	</center>
-	<?php echo script_tag('jscript/gallery.js'); ?>	
+	
 	<br>
+	
 </body>
 </html>
