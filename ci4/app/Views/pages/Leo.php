@@ -19,19 +19,19 @@
 <center>
 <div id="contents">
 	<br>
-		<p style="font-size: 55px; font-family: joane_stencilregular; color: white;" id="lobbytext">The Lion</p>
+		<p  id="lobbytext" style="font-size: 55px; font-family: joane_stencilregular; color: white;">The Lion</p>
 		<br>
-		<p style="font-size: 30px; font-family: joane_stencilregular; color: white;" id="lobbytext">Name</p>
-		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;" id="lobbytext">REDACTED</p>
+		<p id="lobbytext" style="font-size: 30px; font-family: joane_stencilregular; color: white;" >Name</p>
+		<p id="lobbytext" style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;" >REDACTED</p>
 		<br>
-		<p style="font-size: 30px; font-family: joane_stencilregular; color: white;" id="lobbytext">Aliases</p>
-		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;" id="lobbytext">Jam / Jamzy / dalbitjam</p>
+		<p id="lobbytext" style="font-size: 30px; font-family: joane_stencilregular; color: white;">Aliases</p>
+		<p id="lobbytext" style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;">Jam / Jamzy / dalbitjam</p>
 		<br>
-		<p style="font-size: 30px; font-family: joane_stencilregular; color: white;" id="lobbytext">Age</p>
-		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;" id="lobbytext">20 Years Old (2022)</p>
+		<p id="lobbytext" style="font-size: 30px; font-family: joane_stencilregular; color: white;">Age</p>
+		<p id="lobbytext" style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;">20 Years Old (2022)</p>
 		<br>
-		<p style="font-size: 30px; font-family: joane_stencilregular; color: white;" id="lobbytext">Discovery Date</p>
-		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;" id="lobbytext">REDACTED</p>
+		<p id="lobbytext" style="font-size: 30px; font-family: joane_stencilregular; color: white;">Discovery Date</p>
+		<p id="lobbytext" style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;">REDACTED</p>
 	<br>
 </div>
 </center>	
