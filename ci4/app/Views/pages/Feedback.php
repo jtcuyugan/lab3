@@ -86,35 +86,8 @@
 			<input type="radio" name="gender" <?php if (isset($gender) && $gender=="other") echo "checked";?> value="Other">Other  
 			<span class="error">* <?php echo $genderErr;?></span></p>
 			<br><br>
-			<input type="submit" name="submit" value="Submit">  
+			<input type="submit" name="submit" value="Create guest entry">  
 			</form>
-			<?php
-			if ($_SERVER["REQUEST_METHOD"] == "POST") 
-			{
-			
-				$servername = "192.168.150.213";
-				$username = "webprogmi212";
-				$password = "b3ntRhino98";
-				$dbname = "webprogmi212";
-				
-				// Create connection
-				$con = new mysqli($servername, $username, $password, $dbname);
-				// Check connection
-				if ($con->connect_error) {
-					die("Connection failed: " . $con->connect_error);
-				}
-			
-				if(array_key_exists('submit', $_POST)){
-					echo "<br><p style='font-size: 20px; font-family: joane_stencilregular; color: white;' id='restext'>Star Successfully Created!</p><br>";
-					exit;
-				} else{
-					mysqli_error($con);
-				}
-
-				// Close connection
-				mysqli_close($con);
-				}
-			?>
 			<br><br><br>
 		</center>
     </div>

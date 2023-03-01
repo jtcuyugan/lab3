@@ -25,22 +25,24 @@ class Guest extends BaseController
         helper('form');
 
         if (! $this->request->is('post')){
-            return view('templates/header') .
+            return view('templates/header', ['title' => 'Create a guest entry']) .
             view ('pages/Feedback') .
             view ('templates/footer');
         }
 
-        $post = $this->request->getPost(['name','email','website','comment','gender']);
+        $post = $this->request->getPost(['id','name','email','website','comment','gender','reg_date']);
         
         if (! $this->validateData($post, [
+            'id' => 'NULL',
             'name' => 'required|max_length[255]|min_length[3]',
             'email' => 'required|max_length[255]|min_length[3]',
             'website' => 'required|max_length[255]|min_length[3]',
             'comment' => 'required|max_length[255]|min_length[3]',
-            'gender' => 'required|max_length[255]|min_length[3]'
+            'gender' => 'required|max_length[255]|min_length[3]',
+            'reg_date' => 'current_timestamp()'
         ])) {
             return view('templates/header').
-            view('pages/SQLFeed').
+            view('pages/Feedback').
             view('templates/footer');
         }
 
@@ -54,7 +56,7 @@ class Guest extends BaseController
             'gender'  => $post['gender'],
         ]);
 
-        return view('templates/header')
+        return view('templates/header', ['title' => 'Add a Guest Entry'])
             . view('pages/Guests')
             . view('templates/footer');
     }
