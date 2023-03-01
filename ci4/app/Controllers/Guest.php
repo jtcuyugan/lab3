@@ -37,8 +37,7 @@ class Guest extends BaseController
             'email' => 'required|max_length[255]|min_length[3]',
             'website' => 'required|max_length[255]|min_length[3]',
             'comment' => 'required|max_length[255]|min_length[3]',
-            'gender' => 'required|max_length[255]|min_length[3]',
-            'reg_date' => 'current_timestamp()'
+            'gender' => 'required|max_length[255]|min_length[3]'
         ])) {
             return view('templates/header').
             view('pages/Feedback').
