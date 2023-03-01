@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title> LIBRA </title>
+	<title> [ LIBRA ] </title>
 	<?php echo link_tag('css/starpages.css'); 
 	echo script_tag('jscript/shared.js'); ?>
 	<link rel="icon" type="image/x-icon" href="../images/libra.ico">
