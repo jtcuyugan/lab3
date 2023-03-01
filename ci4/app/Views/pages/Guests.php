@@ -10,7 +10,7 @@
 
 <center>
 <br><br><br><br><br><br><br>
-
+<div id="contents">
 <?php
 include("SQLTable.php");
 $query = "SELECT name, email, website, comment, gender FROM jcuyugan_Stars";
@@ -49,6 +49,7 @@ $result = $conn->query($query);
     }?>
   </table>
   <p style="font-size: 20px; font-family: joane_stencilregular; color: white;" id="explore"><a href="Feedback" id="explore">Return to Register!</a></p>
+</div>
 </center>
 </body>
 </html>
