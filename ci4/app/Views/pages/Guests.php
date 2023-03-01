@@ -48,8 +48,8 @@ $result = $conn->query($query);
     <?php
     }?>
   </table>
+  </div>
   <p style="font-size: 20px; font-family: joane_stencilregular; color: white;" id="explore"><a href="Feedback" id="explore">Return to Register!</a></p>
-</div>
 </center>
 </body>
 </html>
