@@ -12,7 +12,7 @@
 <br><br><br><br><br>
 
 <center>
-	<p style="font-size: 55px; font-family: joane_stencilregular; color: white;" id="lobbytext">Constellations and Planets</p>
+	<p style="font-size: 55px; font-family: joane_stencilregular; color: white; text-align: center;" id="lobbytext">Constellations and Planets</p>
 </center>
 
 <center>
