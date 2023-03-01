@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title> Gallery </title>
+	<title> [ GALLERY ] </title>
 	<link rel="stylesheet" href="css/gallery.css">
 	<script src="jscript/gallery.js"></script>
 	<link rel="icon" type="image/x-icon" href="../images/wooteogallery.ico">
