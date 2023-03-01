@@ -69,7 +69,7 @@
 			</div>
 		</div>
 	</center>
-	
+	<?php echo script_tag('jscript/gallery.js'); ?>	
 	<br>
 </body>
 </html>
