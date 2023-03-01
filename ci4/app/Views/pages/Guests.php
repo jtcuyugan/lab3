@@ -13,7 +13,7 @@
 
 <?php
 include("SQLTable.php");
-$query = "SELECT name, email, website, comment, gender FROM Stars";
+$query = "SELECT name, email, website, comment, gender FROM jcuyugan_Stars";
 $result = $conn->query($query);
 ?>
 <table>
