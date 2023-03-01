@@ -15,7 +15,8 @@
 			<div class="text">She is masterful, she likes authority, she aspires toward an ideal. She likes to give advice. She is honest, frank, loyal, open, and sincere.</div>
 		  </div>
 </div>
-
+</center>
+<center>
 <div id="contents">
 	<br>
 		<p style="font-size: 55px; font-family: joane_stencilregular; color: white;" id="lobbytext">The Lion</p>
