@@ -19,7 +19,7 @@
 	<div class="slide">
 		<div class="slideshow-container">
 			<div class="mySlides fade">
-			  <img class="image" src="images/gal1.png" style="width:50%">
+			  <img class="image" src="gal1.png" style="width:50%">
 			</div>
 			
 			<div class="mySlides fade">
