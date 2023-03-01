@@ -22,25 +22,25 @@
 <div id="contents">
 	<br>
 		<center>
-		<p style="font-size: 55px; font-family: joane_stencilregular; color: white;" id="lobbytext">The Archer</p>
+		<p style="font-size: 55px; font-family: joane_stencilregular; color: white; text-align: center;" id="lobbytext">The Archer</p>
 		<br>
 
-		<p style="font-size: 30px; font-family: joane_stencilregular; color: white;" id="lobbytext">Senior High School</p>
-		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;" id="lobbytext">Caloocan City Science High School</p>
+		<p style="font-size: 30px; font-family: joane_stencilregular; color: white; text-align: center;" id="lobbytext">Senior High School</p>
+		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray; text-align: center;" id="lobbytext">Caloocan City Science High School</p>
 		<br>
-		<p style="font-size: 30px; font-family: joane_stencilregular; color: white;" id="lobbytext">Course</p>
-		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;" id="lobbytext">Bachelor of Science in Computer Science</p>
-		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;" id="lobbytext">Softwares & Systems</p>
+		<p style="font-size: 30px; font-family: joane_stencilregular; color: white; text-align: center;" id="lobbytext">Course</p>
+		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray; text-align: center;" id="lobbytext">Bachelor of Science in Computer Science</p>
+		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray; text-align: center;" id="lobbytext">Softwares & Systems</p>
 		<br>
-		<p style="font-size: 30px; font-family: joane_stencilregular; color: white;" id="lobbytext">Scholarship</p>
-		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;" id="lobbytext">SM Foundation Scholarship</p>
-		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;" id="lobbytext">100% Scholarship</p>
+		<p style="font-size: 30px; font-family: joane_stencilregular; color: white; text-align: center;" id="lobbytext">Scholarship</p>
+		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray; text-align: center;" id="lobbytext">SM Foundation Scholarship</p>
+		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray; text-align: center;" id="lobbytext">100% Scholarship</p>
 		<br>
-		<p style="font-size: 30px; font-family: joane_stencilregular; color: white;" id="lobbytext">IT Experience</p>
-		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;" id="lobbytext">C++ (JHS - G9)</p>
-		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;" id="lobbytext">HTML & CSS (JHS - G10)</p>
-		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;" id="lobbytext">Python & Java (APC)</p>
-		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;" id="lobbytext">Gaming (Est. 2002)</p>
+		<p style="font-size: 30px; font-family: joane_stencilregular; color: white; text-align: center;" id="lobbytext">IT Experience</p>
+		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray; text-align: center;" id="lobbytext">C++ (JHS - G9)</p>
+		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray; text-align: center;" id="lobbytext">HTML & CSS (JHS - G10)</p>
+		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray; text-align: center;" id="lobbytext">Python & Java (APC)</p>
+		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray; text-align: center;" id="lobbytext">Gaming (Est. 2002)</p>
 		</center>	
 		<br>
 </div>

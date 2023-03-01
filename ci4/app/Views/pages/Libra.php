@@ -22,27 +22,27 @@
 <div id="contents">
 	<br>
 		<center>
-		<p style="font-size: 55px; font-family: joane_stencilregular; color: white;" id="lobbytext">The Balance</p>
+		<p style="font-size: 55px; font-family: joane_stencilregular; color: white; text-align: center;" id="lobbytext">The Balance</p>
 		<br>
 
-		<p style="font-size: 30px; font-family: joane_stencilregular; color: white;" id="lobbytext">Hobbies / Interests</p>
-		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;" id="lobbytext">Listening to Music</p>
-		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;" id="lobbytext">Learning Languages (Korean)</p>
-		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;" id="lobbytext">Reading and Writing (Fiction)</p>
-		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;" id="lobbytext">Roleplaying</p>
+		<p style="font-size: 30px; font-family: joane_stencilregular; color: white; text-align: center;" id="lobbytext">Hobbies / Interests</p>
+		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray; text-align: center;" id="lobbytext">Listening to Music</p>
+		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray; text-align: center;" id="lobbytext">Learning Languages (Korean)</p>
+		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray; text-align: center;" id="lobbytext">Reading and Writing (Fiction)</p>
+		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray; text-align: center;" id="lobbytext">Roleplaying</p>
 		<br>
-		<p style="font-size: 30px; font-family: joane_stencilregular; color: white;" id="lobbytext">Goals In Life</p>
-		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;" id="lobbytext">To reach the point where I know fully to myself</p>
-		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;" id="lobbytext">that I am happy and I am satisfied of what I've achieved</p>
-		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;" id="lobbytext">for myself and my relationships.</p>
+		<p style="font-size: 30px; font-family: joane_stencilregular; color: white; text-align: center;" id="lobbytext">Goals In Life</p>
+		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray; text-align: center;" id="lobbytext">To reach the point where I know fully to myself</p>
+		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray; text-align: center;" id="lobbytext">that I am happy and I am satisfied of what I've achieved</p>
+		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray; text-align: center;" id="lobbytext">for myself and my relationships.</p>
 		<br>
-		<p style="font-size: 30px; font-family: joane_stencilregular; color: white;" id="lobbytext">Subject Expectations</p>
-		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;" id="lobbytext">I hope that this subject will help me recall my previous knowledge about web programming</p>
-		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;" id="lobbytext">and teach me new knowledge in an engaging way.</p>
+		<p style="font-size: 30px; font-family: joane_stencilregular; color: white; text-align: center;" id="lobbytext">Subject Expectations</p>
+		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray; text-align: center;" id="lobbytext">I hope that this subject will help me recall my previous knowledge about web programming</p>
+		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray; text-align: center;" id="lobbytext">and teach me new knowledge in an engaging way.</p>
 		<br>
-		<p style="font-size: 30px; font-family: joane_stencilregular; color: white;" id="lobbytext">Want To Learn</p>
-		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;" id="lobbytext">I want to increase my knowledge of HTML and CSS concepts</p>
-		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;" id="lobbytext">be introduced to new languages like Javascript and React.</p>
+		<p style="font-size: 30px; font-family: joane_stencilregular; color: white; text-align: center;" id="lobbytext">Want To Learn</p>
+		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray; text-align: center;" id="lobbytext">I want to increase my knowledge of HTML and CSS concepts</p>
+		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray; text-align: center;" id="lobbytext">be introduced to new languages like Javascript and React.</p>
 		</center>	
 		<br>
 </div>

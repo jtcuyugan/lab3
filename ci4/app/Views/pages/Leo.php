@@ -19,19 +19,19 @@
 <center>
 <div id="contents">
 	<br>
-		<p  id="lobbytext" style="font-size: 55px; font-family: joane_stencilregular; color: white;">The Lion</p>
+		<p  id="lobbytext" style="font-size: 55px; font-family: joane_stencilregular; color: white; text-align: center;">The Lion</p>
 		<br>
-		<p id="lobbytext" style="font-size: 30px; font-family: joane_stencilregular; color: white;" >Name</p>
-		<p id="lobbytext" style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;" >REDACTED</p>
+		<p id="lobbytext" style="font-size: 30px; font-family: joane_stencilregular; color: white; text-align: center;" >Name</p>
+		<p id="lobbytext" style="font-size: 20px; font-family: TimesNewRoman; color: lightgray; text-align: center;" >REDACTED</p>
 		<br>
-		<p id="lobbytext" style="font-size: 30px; font-family: joane_stencilregular; color: white;">Aliases</p>
-		<p id="lobbytext" style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;">Jam / Jamzy / dalbitjam</p>
+		<p id="lobbytext" style="font-size: 30px; font-family: joane_stencilregular; color: white; text-align: center;">Aliases</p>
+		<p id="lobbytext" style="font-size: 20px; font-family: TimesNewRoman; color: lightgray; text-align: center;">Jam / Jamzy / dalbitjam</p>
 		<br>
-		<p id="lobbytext" style="font-size: 30px; font-family: joane_stencilregular; color: white;">Age</p>
-		<p id="lobbytext" style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;">20 Years Old (2022)</p>
+		<p id="lobbytext" style="font-size: 30px; font-family: joane_stencilregular; color: white; text-align: center;">Age</p>
+		<p id="lobbytext" style="font-size: 20px; font-family: TimesNewRoman; color: lightgray; text-align: center;">20 Years Old (2022)</p>
 		<br>
-		<p id="lobbytext" style="font-size: 30px; font-family: joane_stencilregular; color: white;">Discovery Date</p>
-		<p id="lobbytext" style="font-size: 20px; font-family: TimesNewRoman; color: lightgray;">REDACTED</p>
+		<p id="lobbytext" style="font-size: 30px; font-family: joane_stencilregular; color: white; text-align: center;">Discovery Date</p>
+		<p id="lobbytext" style="font-size: 20px; font-family: TimesNewRoman; color: lightgray; text-align: center;">REDACTED</p>
 	<br>
 </div>
 </center>	
