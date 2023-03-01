@@ -67,8 +67,11 @@
 
 			<p style="font-size: 20; font-family: joane_stencilregular;" id="explore"><a href="Guests" id="explore">Explore the Created Galaxy</a></p>
 
-			<form method="post" action="SQLFeed">  
-			
+			<?= session()->getFlashdata('error') ?>
+			<?= validation_list_errors() ?>
+
+			<form method="post" action="create">  
+			<?= csrf_field() ?>
 			<p style="font-size: 20px; font-family: TimesNewRoman; color: white;" id="restext">Star's Name: <input type="text" name="name" value="<?php echo $name;?>">
 			<span class="error" style="font-size: 20px; font-family: TimesNewRoman; color: white;">* <?php echo $nameErr;?></span></p>
 			<br>
