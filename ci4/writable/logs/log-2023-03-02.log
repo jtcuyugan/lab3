@@ -1,0 +1,73 @@
+INFO - 2023-03-02 04:22:51 --> CSRF token verified.
+ERROR - 2023-03-02 04:23:03 --> Error connecting to the database: mysqli_sql_exception: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\wamp64\www\lab3\ci4\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\wamp64\www\lab3\ci4\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('192.168.150.213', 'webprogmi212', 'b3ntRhino98', 'webprogmi212', 3306, '', 0)
+#1 C:\wamp64\www\lab3\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\lab3\ci4\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\lab3\ci4\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jc...', Array, false)
+#4 C:\wamp64\www\lab3\ci4\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\lab3\ci4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\lab3\ci4\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\wamp64\www\lab3\ci4\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\wamp64\www\lab3\ci4\app\Controllers\Guest.php(54): CodeIgniter\BaseModel->save(Array)
+#9 C:\wamp64\www\lab3\ci4\system\CodeIgniter.php(934): App\Controllers\Guest->create()
+#10 C:\wamp64\www\lab3\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guest))
+#11 C:\wamp64\www\lab3\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\wamp64\www\lab3\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\wamp64\www\lab3\ci4\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\wamp64\www\lab3\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\lab3\ci4\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\lab3\ci4\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jc...', Array, false)
+#3 C:\wamp64\www\lab3\ci4\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\wamp64\www\lab3\ci4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#5 C:\wamp64\www\lab3\ci4\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, false)
+#6 C:\wamp64\www\lab3\ci4\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#7 C:\wamp64\www\lab3\ci4\app\Controllers\Guest.php(54): CodeIgniter\BaseModel->save(Array)
+#8 C:\wamp64\www\lab3\ci4\system\CodeIgniter.php(934): App\Controllers\Guest->create()
+#9 C:\wamp64\www\lab3\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guest))
+#10 C:\wamp64\www\lab3\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\lab3\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-02 04:23:03 --> Unable to connect to the database.
+Main connection [MySQLi]: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jcuyugan_Stars` (`name`, `email`, `website`, `comment`, `gender`) VALUES (:name:, :email:, :website:, :comment:, :gender:)', [...], false)
+ 3 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH\Controllers\Guest.php(54): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Guest->create()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guest))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 04:23:21 --> mysqli::__construct(): (HY000/2002): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+in APPPATH\Views\pages\SQLTable.php on line 18.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::__construct(): (HY000/2002): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond', 'APPPATH\\Views\\pages\\SQLTable.php', 18)
+ 2 APPPATH\Views\pages\SQLTable.php(18): mysqli->__construct('192.168.150.213', 'webprogmi212', 'b3ntRhino98', 'webprogmi212')
+ 3 APPPATH\Views\pages\Guests.php(15): include('APPPATH\\Views\\pages\\SQLTable.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\Guests.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('pages/Guests', [], true)
+ 7 APPPATH\Controllers\Pages.php(21): view('pages/Guests')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view('Guests')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 04:23:42 --> mysqli::__construct(): (HY000/2002): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+in APPPATH\Views\pages\SQLTable.php on line 18.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::__construct(): (HY000/2002): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond', 'APPPATH\\Views\\pages\\SQLTable.php', 18)
+ 2 APPPATH\Views\pages\SQLTable.php(18): mysqli->__construct('192.168.150.213', 'webprogmi212', 'b3ntRhino98', 'webprogmi212')
+ 3 APPPATH\Views\pages\Guests.php(15): include('APPPATH\\Views\\pages\\SQLTable.php')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\Guests.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('pages/Guests', [], true)
+ 7 APPPATH\Controllers\Pages.php(21): view('pages/Guests')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->view('Guests')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
