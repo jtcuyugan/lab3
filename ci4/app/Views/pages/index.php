@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>[ SPACE JAM ]</title>
-	<link rel="shortcut icon" href="/images/wootteohome.ico" type="image/x-icon">
+	<link rel="icon" type="image/x-icon" href="images/wootteohome.ico">
 	<?php echo link_tag('css/index.css'); 
 	echo script_tag('jscript/index.js'); ?>
 </head>
