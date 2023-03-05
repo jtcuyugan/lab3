@@ -10,16 +10,16 @@
 <body>
 
 <br><br><br><br><br>
-<center>
+<div id="cont">
+	<center>
 	<div class="container">
-			<img src="images/libra.png" alt="The Libra Constellation" height="525px">
+			<img class="star" src="images/libra.png" alt="The Libra Constellation" height="525px">
 			<div class="overlay" style="font-size: 30px; font-family: joane_stencilregular;">
 				<div class="text">She is nice and fair, she is affable. She is charming and gentle. She is persuasive, competent and active within her relationships. She is attractive yet self-conscious towards her appearance.</div>
-			  </div>
+			</div>
 	</div>
-</center>
-
-<div id="contents">
+	</center>
+	<div id="contents">
 	<br>
 		<center>
 		<p style="font-size: 55px; font-family: joane_stencilregular; color: white; text-align: center;" id="lobbytext">The Balance</p>
@@ -45,7 +45,7 @@
 		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray; text-align: center;" id="lobbytext">be introduced to new languages like Javascript and React.</p>
 		</center>	
 		<br>
+	</div>
 </div>
-
 </body>
 </html>

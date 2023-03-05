@@ -10,16 +10,16 @@
 <body>
 
 <br><br><br><br><br>
-<center>
+<div id="cont">
+	<center>
 	<div class="container">
-			<img src="images/sag.png" alt="The Sagittarius Constellation" height="525px">
+			<img class="star" src="images/sag.png" alt="The Sagittarius Constellation" height="525px">
 			<div class="overlay" style="font-size: 30px; font-family: joane_stencilregular;">
-				<div class="text">May like to throw herself into the unknown and into adventure; she is agile, tough, and enthusiastic. Attracted to long voyages, to discovering the unknown. Audacious, bold, and rebellious. Unable to stay in one place, always ready to risk everything to achieve her goal.</div>
+			<div class="text">May like to throw herself into the unknown and into adventure; she is agile, tough, and enthusiastic. Attracted to long voyages, to discovering the unknown. Audacious, bold, and rebellious. Unable to stay in one place, always ready to risk everything to achieve her goal.</div>
 			</div>
 	</div>
-</center>
-
-<div id="contents">
+	</center>
+	<div id="contents">
 	<br>
 		<center>
 		<p style="font-size: 55px; font-family: joane_stencilregular; color: white; text-align: center;" id="lobbytext">The Archer</p>
@@ -43,7 +43,7 @@
 		<p style="font-size: 20px; font-family: TimesNewRoman; color: lightgray; text-align: center;" id="lobbytext">Gaming (Est. 2002)</p>
 		</center>	
 		<br>
+	</div>
 </div>
-
 </body>
 </html>
