@@ -189,8 +189,7 @@
                     <li id="buttons"><a href="Sagi" id="buttons">MOON</a></li>
                     <li id="buttons"><a href="Libra" id="buttons">RISING</a></li>
                 </ul>
-            </center>
-            
+                <hr id="header">
+            </center>     
         </div>
-        <hr id="header">
     </div>
