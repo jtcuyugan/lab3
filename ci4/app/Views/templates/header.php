@@ -86,7 +86,6 @@
         
         ul{
             display: inline-block;
-            z-index: 3;
         }
         
         hr#header{
