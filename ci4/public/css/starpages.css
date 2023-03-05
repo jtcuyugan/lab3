@@ -91,12 +91,21 @@
 			size: 4;
 		}
 
+		div#cont{
+			display: flex;
+			justify-content: center;
+			gap: 2.3vw;
+			padding-top: 6vw;
+			padding-left: 3vw;
+			padding-right: 3vw;
+		}
+
 		div#contents{
-			height: auto;
 			background-color: rgba(0,0,0,.5); 
 			position: relative;
 			z-index: 2;
-
+			max-width: 40vw;
+			width: 40vw;
 		}
 
 		p#lobbytext{
@@ -114,37 +123,29 @@
 
 		.container {
 			position: relative;
-			height:auto;
-			background-color: rgba(0,0,0,.5); 
-			z-index: 2;
+			background-color: rgba(0,0,0,.5);
+			display: flex;
+			overflow: hidden; 
 		  }
-		  
+		 
 		  .overlay {
 			position: absolute;
 			bottom: 0;
-			left: 35%;
-			right: 35%;
+			width: 95%;
 			background-color: #76DBBF;
-			overflow: hidden;
-
 			height: 0;
-			transition: .5s ease;
+			transition: height .5s ease-in-out;
 		  }
 		  
-		  .container:hover .overlay {
+		  .container:hover > .text {
 			height: 100%;
 		  }
 		  
 		  .text {
+			position: absolute;
 			line-height: auto;
 			word-wrap: break-word;
 			color: black;
 			font-size: 20px;
-			position: absolute;
-			overflow: hidden;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			-ms-transform: translate(-50%, -50%);
-			
+			text-align: justify;	
 		  }
