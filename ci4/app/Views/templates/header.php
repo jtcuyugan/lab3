@@ -48,7 +48,6 @@
             height: 50px;
             background-color: transparent;
             display: inline-block;
-            z-index: 3;
         }
         
         li a#buttons{
@@ -63,14 +62,6 @@
         
         li a#buttons:hover{
             color: #76dbbf;
-        }
-        
-        video#myVideo {
-            position: fixed;
-            top: 0;
-            right: 0;
-            width: 100%;
-            z-index: -1000;
         }
         
         li a img{
