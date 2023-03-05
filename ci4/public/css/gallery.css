@@ -90,60 +90,42 @@ size: 4;
 }
 
 div#contents{
-height: 520px;
-background-color: rgba(0,0,0,.5); 
-position: relative;
-z-index: 2;
+	display: flex;
+	height: 520px;
+	background-color: rgba(0,0,0,.5); 
+	position: relative;
+	z-index: 2;
 }
 
-p#lobbytext{
-line-height: 0px;
-background-color: black, opacity(0.5);
-vertical-align: bottom;
-margin-left: 10px;
-z-index: 2;
+.lobbytext{
+	line-height: 0px;
+	background-color: black, opacity(0.5);
+	vertical-align: bottom;
+	margin-left: 10px;
+	z-index: 2;
 }
 
-
-.mySlides {
-display: none;
-overflow: hidden;
-}
-
-.image {
-vertical-align: middle;
-}
-
-/* Slideshow container */
-.slideshow-container {
-max-width: 1000px;
-position: relative;
-margin: auto;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-height: 15px;
-width: 15px;
-margin: 0 2px;
-background-color: #bbb;
-border-radius: 50%;
-display: inline-block;
-transition: background-color 0.6s ease;
-}
-
-.active {
-background-color: #717171;
-}
-
-/* Lesson 22: HTML DOM */
-/* Fading animation */
-.fade {
-animation-name: fade;
-animation-duration: 2s;
-}
-
-@keyframes fade {
-from {opacity: .4} 
-to {opacity: 1}
-}
+/* Gallery */
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 28px;
+  }
+  @media only screen and (max-width: 735px) {
+	.gallery {
+	  gap: 3px;
+	}
+  }
+  .gallery-item {
+	position: relative;
+  }
+  .gallery-item img {
+	width: 75%;
+	height:auto;
+	display: block;
+  }
+  .gallery-item .media-icon {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+  }

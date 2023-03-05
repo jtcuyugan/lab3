@@ -1,25 +1,19 @@
-let slideIndex = 0;
+var container = document.getElementById("slidecont");
+var slides = container.getElementsByClassName("slide");
 
+function showSlides(s, i) {
+    s[i].style.opacity = "1";
 
-/* Lesson 18: Functions */
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  /* LESSON 22: HTML DOM */
-  let dots = document.getElementsByClassName("dot");
-  /* LESSON 10: Loop For */
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  /* LESSON 10: Break */
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
+    if (i == 0) {
+        s[s.length-1].style.opacity = "0";
+    } else {
+        s[i-1].style.opacity = "0";
+    }
+
+    i++;
+    if (i >= s.length) {
+        i = 0;
+    }
+    setTimeout(function () { showSlides(s, i) }, 5000);
 }
-showSlides();
-
+showSlides(slides, 0);
