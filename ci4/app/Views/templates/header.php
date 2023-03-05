@@ -190,6 +190,7 @@
                     <li id="buttons"><a href="Libra" id="buttons">RISING</a></li>
                 </ul>
             </center>
-            <hr id="header">
+            
         </div>
+        <hr id="header">
     </div>
